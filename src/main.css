@@ -1,0 +1,57 @@
+.feels,
+.humidity,
+.wind {
+  list-style: none;
+  text-align: left;
+  margin-left: -28px;
+  line-height: 1.1;
+}
+.weathercondition {
+  text-align: left;
+  margin-left: 12px;
+  line-height: 0.8;
+}
+.location {
+  text-align: left;
+  margin-left: 12px;
+  line-height: 0.8;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+.weathertimedate {
+  text-align: left;
+  margin-left: 12px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.iconcircle {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+}
+.gradientbig {
+  margin-top: 20px;
+  height: 130px;
+  width: 130px;
+  display: block;
+  border-radius: 50%;
+  background: linear-gradient(-25deg, transparent, rgba(255, 255, 255, 0.4));
+  background-blend-mode: screen;
+  z-index: 10;
+}
+.temperature {
+  top: 60px;
+  font-size: 76px;
+  font-weight: 100;
+  opacity: 0.8;
+}
+.units {
+  position: absolute;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.temph {
+  margin-top: 40px;
+  margin-left: -20px;
+}
