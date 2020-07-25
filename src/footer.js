@@ -5,13 +5,10 @@ export default function Footer() {
   return (
     <div className="footer">
       <small class="text-muted">
-        <a href="https://github.com/stersj/weather-react" target="_blank">
-          Open-source code
-        </a>
-        , by
+        <a href="https://github.com/stersj/weather-react">Open-source code</a>,
+        by
         <a
           href="https://www.linkedin.com/in/esther-sim-jensen-47bb3120/"
-          target="_blank"
           class="profileLink"
         >
           {" "}
