@@ -15,7 +15,7 @@ export default function Footer() {
           Esther Sim
         </a>
         , Hosted on
-        <a href="https://condescending-kalam-ef4468.netlify.app/?">, Netlify</a>
+        <a href="https://eager-edison-a06de0.netlify.app/">, Netlify</a>
       </small>
     </div>
   );
