@@ -39,7 +39,9 @@ export default function Main(props) {
           <div className="weathertemperature">
             <div class="float-left">
               <div className="temph" id="w_temp">
-                <strong className="temperature" temperature={24} /> 24
+                <p className="temperature" temperature={24}>
+                  24
+                </p>
                 <span className="units">
                   <a href="/" id="unitC" class="active">
                     °C{" "}

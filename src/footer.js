@@ -5,7 +5,11 @@ export default function Footer() {
   return (
     <div className="footer">
       <small class="text-muted">
-        <a href="https://github.com/stersj/weather-react" target="_blank">
+        <a
+          href="https://github.com/stersj/weather-react"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Open-source code
         </a>
         , by
@@ -13,12 +17,17 @@ export default function Footer() {
           href="https://www.linkedin.com/in/esther-sim-jensen-47bb3120/"
           class="profileLink"
           target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           Esther Sim
         </a>
         , Hosted on
-        <a href="https://eager-edison-a06de0.netlify.app/" target="_blank">
+        <a
+          href="https://eager-edison-a06de0.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           , Netlify
         </a>
       </small>
