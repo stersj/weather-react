@@ -6,9 +6,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
-import "./container.css";
+import "./Weather.css";
 
-export default function MainContainer() {
+export default function Weather() {
   return (
     <Container className="Container">
       <h1> SparkVejr.</h1>
