@@ -1,46 +1,43 @@
 import React from "react";
 import Main from "./main";
 import Forecast from "./forecast";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
+import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
+  const apiKey = "e8afed4d9a3d0f7582b3f63e5e950faf";
+  let city = "Copenhagen";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+
   return (
-    <Container className="Container">
+    <div className="Container">
       <h1> SparkVejr.</h1>
-      <Form>
-        <Row>
-          <Col sm={9}>
-            {" "}
-            <Form>
-              <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Control
-                  className="searchbar"
-                  type="search"
-                  placeholder="Type a city..."
-                />
-              </Form.Group>
-            </Form>
-          </Col>
-          <Col md={1}>
-            {" "}
-            <Button
-              variant="primary"
+      <div className="Form">
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="search"
+              placeholder="Type a city..."
+              className="form-control"
+              autoFocus="on"
+            />
+          </div>
+          <div className="col-1">
+            <input
               type="submit"
-              id="search-button"
               value="Search"
-            >
-              Submit
-            </Button>
-          </Col>
-        </Row>
-      </Form>
+              className="btn btn-primary width-150"
+            />
+          </div>
+        </div>
+      </div>
       <Main />
       <Forecast />
-    </Container>
+    </div>
   );
 }

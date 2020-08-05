@@ -1,6 +1,4 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./forecast.css";
 export default function Forecast() {
   return (
@@ -8,74 +6,74 @@ export default function Forecast() {
       <h4>
         <strong> Weekly forecast </strong>
       </h4>
-      <Row id="forecast">
-        <Col sm={2}>
+      <div className="row" id="forecast">
+        <div className="col-2">
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" class="float-left" />
+              <icon src="icon/01d.png" alt="" className="float-left" />
             </span>
           </div>
           <div className="weatherForecastTemperature">
             <strong> 16°</strong>14°
           </div>
-        </Col>
-        <Col sm={2}>
+        </div>
+        <div className="col-2">
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" class="float-left" />
+              <icon src="icon/01d.png" alt="" className="float-left" />
             </span>
           </div>
           <div className="weatherForecastTemperature">
             <strong> 16°</strong>14°
           </div>
-        </Col>
-        <Col sm={2}>
+        </div>
+        <div className="col-2">
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" class="float-left" />
+              <icon src="icon/01d.png" alt="" className="float-left" />
             </span>
           </div>
           <div className="weatherForecastTemperature">
             <strong> 16°</strong>14°
           </div>
-        </Col>
-        <Col sm={2}>
+        </div>
+        <div className="col-2">
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" class="float-left" />
+              <icon src="icon/01d.png" alt="" className="float-left" />
             </span>
           </div>
           <div className="weatherForecastTemperature">
             <strong> 16°</strong>14°
           </div>
-        </Col>
-        <Col sm={2}>
+        </div>
+        <div className="col-2">
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" class="float-left" />
+              <icon src="icon/01d.png" alt="" className="float-left" />
             </span>
           </div>
           <div className="weatherForecastTemperature">
             <strong> 16°</strong>14°
           </div>
-        </Col>
-        <Col sm={2}>
+        </div>
+        <div className="col-2">
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" class="float-left" />
+              <icon src="icon/01d.png" alt="" className="float-left" />
             </span>
           </div>
           <div className="weatherForecastTemperature">
             <strong> 16°</strong>14°
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 }

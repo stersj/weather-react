@@ -1,7 +1,5 @@
 import React from "react";
 import "./main.css";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 export default function Main(props) {
   function showFahrenheit(event) {
@@ -12,8 +10,8 @@ export default function Main(props) {
 
   return (
     <div>
-      <Row>
-        <Col md={6}>
+      <div className="row">
+        <div className="col-6">
           <h2 className="location" id="city">
             {" "}
             Birkerød, Denmark{" "}
@@ -27,15 +25,15 @@ export default function Main(props) {
               <li className="wind">Wind: 8 m/s</li>
             </ul>
           </div>
-        </Col>
-        <Col sm={3}>
+        </div>
+        <div className="col-3">
           <div className="iconcircle">
             <span className="gradientbig">
               <img src="icon/01d.png" alt="" class="float-left" />
             </span>
           </div>
-        </Col>
-        <Col sm={3}>
+        </div>
+        <div className="col-3">
           <div className="weathertemperature">
             <div class="float-left">
               <div className="temph" id="w_temp">
@@ -54,8 +52,8 @@ export default function Main(props) {
               </div>
             </div>{" "}
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 }
