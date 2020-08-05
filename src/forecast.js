@@ -1,5 +1,6 @@
 import React from "react";
 import "./forecast.css";
+
 export default function Forecast() {
   return (
     <div className="weeklyForecast">
@@ -11,7 +12,11 @@ export default function Forecast() {
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" className="float-left" />
+              <img
+                alt="Partly_cloudy"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                width="60px"
+              />
             </span>
           </div>
           <div className="weatherForecastTemperature">
@@ -22,7 +27,11 @@ export default function Forecast() {
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" className="float-left" />
+              <img
+                alt="Partly_cloudy"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                width="60px"
+              />
             </span>
           </div>
           <div className="weatherForecastTemperature">
@@ -33,7 +42,11 @@ export default function Forecast() {
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" className="float-left" />
+              <img
+                alt="Partly_cloudy"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                width="60px"
+              />
             </span>
           </div>
           <div className="weatherForecastTemperature">
@@ -44,7 +57,11 @@ export default function Forecast() {
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" className="float-left" />
+              <img
+                alt="Partly_cloudy"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                width="60px"
+              />
             </span>
           </div>
           <div className="weatherForecastTemperature">
@@ -55,7 +72,11 @@ export default function Forecast() {
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" className="float-left" />
+              <img
+                alt="Partly_cloudy"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                width="60px"
+              />
             </span>
           </div>
           <div className="weatherForecastTemperature">
@@ -66,7 +87,11 @@ export default function Forecast() {
           <h6>12:30</h6>
           <div className="iconcirclemini">
             <span className="gradientsmall">
-              <icon src="icon/01d.png" alt="" className="float-left" />
+              <img
+                alt="Partly_cloudy"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                width="60px"
+              />
             </span>
           </div>
           <div className="weatherForecastTemperature">

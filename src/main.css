@@ -43,14 +43,8 @@
 .temperature {
   font-size: 65px;
   opacity: 0.8;
+  line-height: 50px;
 }
-.units {
-  position: absolute;
-  margin-left: 40px;
-  bottom: 100px;
+.unit {
   font-size: 16px;
-}
-.temph {
-  margin-top: 40px;
-  margin-left: -20px;
 }
