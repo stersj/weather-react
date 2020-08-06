@@ -1,13 +1,8 @@
 import React from "react";
 import "./main.css";
+import Temperature from "./Temperature";
 
 export default function Main(props) {
-  function showFahrenheit(event) {
-    event.preventDefault();
-    let temperature = (props.temperature * 9) / 5 + 32;
-    alert(`The temperature in fahrenheit is ${Math.round(temperature)}°F`);
-  }
-
   return (
     <div className="weather-main">
       <div className="row mt-3">
@@ -28,24 +23,14 @@ export default function Main(props) {
         <div className="col-3">
           <div className="clearfix">
             <img
-              alt="Clear"
+              alt="Partly_cloudy"
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               width="140px"
             />
           </div>
         </div>
         <div className="col-3">
-          {" "}
-          <span className="temperature">20</span>
-          <span className="unit">
-            <a href="/" id="unitC" className="active">
-              °C
-            </a>
-            |
-            <a href="/" onClick={showFahrenheit}>
-              °F
-            </a>
-          </span>
+          <Temperature />
         </div>
       </div>
     </div>
