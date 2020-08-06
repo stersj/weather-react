@@ -7,16 +7,14 @@ export default function Main(props) {
     <div className="weather-main">
       <div className="row mt-3">
         <div className="col-6">
-          <h2 className="location" id="city">
-            Birkerød,Denmark
-          </h2>
+          <h2 className="location">{props.data.city}</h2>
           <h3 className="weathercondition"> Rain</h3>
           <h4 className="weathertimedate"> Last updated: Sunday, 16:44</h4>
           <div className="weatherParameters">
             <ul>
-              <li className="feels">Feels like: 12 °C</li>
-              <li className="humidity">Humidity: 80 %</li>
-              <li className="wind">Wind: 8 m/s</li>
+              <li className="feels">Feels like: {props.data.temperature} °C</li>
+              <li className="humidity">Humidity:{props.data.humidity} %</li>
+              <li className="wind">Wind: {props.data.wind} m/s</li>
             </ul>
           </div>
         </div>

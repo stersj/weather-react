@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./forecast.css";
 import axios from "axios";
-import Icon from "./icon";
+import ForecastPreview from "./forecastpreview";
 
 export default function Forecast(props) {
   const [checked, setChecked] = useState(false);
@@ -14,96 +14,13 @@ export default function Forecast(props) {
 
   if (checked && props.city === forecast.city.name) {
     return (
-      <div className="weeklyForecast">
-        <h4>
-          <strong> Weekly forecast </strong>
-        </h4>
-        <div className="col-2">
-          {hour()}
-          <div className="icon">
-            <span className="gradientsmall">
-              <Icon code={props.data.weather[0].icon} />
-            </span>
-          </div>
-          <div className="weatherForecastTemperature">
-            <strong> {temperature()}</strong>14°
-          </div>
-        </div>
-        <div className="col-2">
-          <h6>12:30</h6>
-          <div className="icon">
-            <span className="gradientsmall">
-              <img
-                alt="Partly_cloudy"
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                width="60px"
-              />
-            </span>
-          </div>
-          <div className="weatherForecastTemperature">
-            <strong> 16°</strong>14°
-          </div>
-        </div>
-        <div className="col-2">
-          <h6>12:30</h6>
-          <div className="icon">
-            <span className="gradientsmall">
-              <img
-                alt="Partly_cloudy"
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                width="60px"
-              />
-            </span>
-          </div>
-          <div className="weatherForecastTemperature">
-            <strong> 16°</strong>14°
-          </div>
-        </div>
-        <div className="col-2">
-          <h6>12:30</h6>
-          <div className="icon">
-            <span className="gradientsmall">
-              <img
-                alt="Partly_cloudy"
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                width="60px"
-              />
-            </span>
-          </div>
-          <div className="weatherForecastTemperature">
-            <strong> 16°</strong>14°
-          </div>
-        </div>
-        <div className="col-2">
-          <h6>12:30</h6>
-          <div className="icon">
-            <span className="gradientsmall">
-              <img
-                alt="Partly_cloudy"
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                width="60px"
-              />
-            </span>
-          </div>
-          <div className="weatherForecastTemperature">
-            <strong> 16°</strong>14°
-          </div>
-        </div>
-        <div className="col-2">
-          <h6>12:30</h6>
-          <div className="icon">
-            <span className="gradientsmall">
-              <img
-                alt="Partly_cloudy"
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                width="60px"
-              />
-            </span>
-          </div>
-          <div className="weatherForecastTemperature">
-            <strong> 16°</strong>14°
-          </div>
-        </div>
+      <div className="weeklyforecast row">
+        <ForecastPreview data={forecast.list[0]} />
+        <ForecastPreview data={forecast.list[1]} />
+        <ForecastPreview data={forecast.list[2]} />
+        <ForecastPreview data={forecast.list[3]} />
+        <ForecastPreview data={forecast.list[4]} />
+        <ForecastPreview data={forecast.list[5]} />
       </div>
     );
   } else {
