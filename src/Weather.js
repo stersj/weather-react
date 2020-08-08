@@ -13,21 +13,21 @@ export default function Weather(props) {
     setWeatherInfo({
       ready: true,
       temperature: response.data.main.temp,
-      humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
+      humidity: response.data.main.humidity,
     });
   }
   function handleSubmit(event) {
     event.preventDefault();
+    search();
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
-    search();
   }
 
   function search() {
@@ -49,11 +49,11 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-1">
+            <div className="col-3">
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary width-150"
+                className="btn btn-primary width-300"
               />
             </div>
           </div>

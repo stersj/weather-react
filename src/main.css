@@ -24,27 +24,18 @@
   font-size: 20px;
   line-height: 1.2;
 }
-.iconcircle {
-  height: 130px;
-  width: 130px;
-  border-radius: 50%;
-  background-color: #f4f4f4;
-}
-.gradientbig {
-  margin-top: 20px;
-  height: 130px;
-  width: 130px;
-  display: block;
-  border-radius: 50%;
-  background: linear-gradient(-25deg, transparent, rgba(255, 255, 255, 0.4));
-  background-blend-mode: screen;
-  z-index: 10;
+.main-icon canvas {
+  margin-left: 12px;
+  width: 80px;
 }
 .temperature {
-  font-size: 65px;
+  float: left;
+  font-size: 64px;
+  margin-top: 10px;
   opacity: 0.8;
   line-height: 50px;
 }
 .unit {
-  font-size: 16px;
+  margin-top: 10px;
+  float: left;
 }

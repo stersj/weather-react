@@ -1,20 +1,14 @@
-.iconcirclemini {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #f4f4f4;
-  margin: 12px 20px;
+.forecast-title {
+  margin: 10px;
 }
-.gradientsmall {
-  margin-top: 20px;
-  height: 50px;
-  width: 50px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  background: linear-gradient(-25deg, transparent, rgba(255, 255, 255, 0.4));
-  background-blend-mode: screen;
-  z-index: 10;
+.weeklyforecast {
+  display: center;
+  padding: 7px;
+  white-space: nowrap;
+  margin-left: 3px;
+  top: 0px;
+  transform: translate3d(0px, 0px, 0px);
+  transition: -webkit-transform 0ms ease-in-out 0s;
 }
 h4 {
   text-align: left;
@@ -22,4 +16,10 @@ h4 {
   margin-bottom: 15px;
   line-height: 1;
   opacity: 0.8;
+}
+.WeatherForecastPreview {
+  line-height: 30px;
+}
+.temp-min-max {
+  line-height: 1.1;
 }
