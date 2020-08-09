@@ -10,7 +10,10 @@ export default function Main(props) {
       <div className="row mt-3">
         <div className="col-4">
           <h2 className="location">{props.data.city}</h2>
-          <h3 className="weathercondition"> Rain</h3>
+          <h3 className="weathercondition">
+            {" "}
+            <span className="text-capitalize">{props.data.description}</span>
+          </h3>
           <h4 className="weathertimedate">
             {" "}
             <DateFormat date={props.data.date} />
@@ -25,17 +28,22 @@ export default function Main(props) {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-3">
           <Temperature celsius={props.data.temperature} />
         </div>
-        <div className="col-3">
+        <div className="col-7">
           <div className="weatherParameters">
-            <ul>
+            <ul className="Parameters">
               <li className="feels">
-                Feels like : {Math.round(props.data.temperature)} °C
+                <strong>Feels like </strong>:{" "}
+                {Math.round(props.data.temperature)} °C
               </li>
-              <li className="humidity">Humidity : {props.data.humidity} %</li>
-              <li className="wind">Wind : {props.data.wind} m/s</li>
+              <li className="humidity">
+                <strong>Humidity</strong> : {props.data.humidity} %
+              </li>
+              <li className="wind">
+                <strong>Wind </strong>: {props.data.wind} m/s
+              </li>
             </ul>
           </div>
         </div>
