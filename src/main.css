@@ -1,41 +1,47 @@
-.feels,
-.humidity,
-.wind {
+.Parameters {
   list-style: none;
+  margin-top: 25px;
+  font-size: 16px;
   text-align: left;
-  margin-left: -28px;
   line-height: 1.1;
+  margin-left: 130px;
+  opacity: 0.8;
 }
 .weathercondition {
   text-align: left;
-  margin-left: 12px;
+  opacity: 0.8;
+  margin-left: 20px;
   line-height: 0.8;
 }
 .location {
   text-align: left;
-  margin-left: 12px;
-  line-height: 0.8;
-  font-weight: bolder;
+  margin-left: 20px;
+  line-height: 0.9;
+  font-weight: 500;
   opacity: 0.8;
 }
 .weathertimedate {
   text-align: left;
-  margin-left: 12px;
-  font-size: 20px;
-  line-height: 1.2;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 1.1;
 }
 .main-icon canvas {
-  margin-left: 12px;
+  margin-left: 25px;
+  margin-top: 15px;
   width: 80px;
 }
-.temperature {
+.weather-temperature {
   float: left;
   font-size: 64px;
-  margin-top: 10px;
   opacity: 0.8;
-  line-height: 50px;
+  font-weight: 400;
+  margin-left: -5px;
+  margin-top: 10px;
 }
 .unit {
-  margin-top: 10px;
-  float: left;
+  font-size: 14px;
+  left: 3px;
+  top: -38px;
+  position: relative;
 }

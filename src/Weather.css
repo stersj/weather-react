@@ -1,18 +1,18 @@
 .form-control {
-  margin-top: 12px;
-  margin-left: 12px;
+  margin-top: 15px;
+  margin-left: 18px;
   margin: 20 auto;
-  margin-bottom: 15px;
-}
-.form-control:hover {
+  margin-bottom: 5px;
+  padding: 10px;
   cursor: pointer;
   transition: transform 0.2s;
 }
+
 .Container h1 {
   text-align: left;
   margin-left: 12px;
 }
 .btn {
-  margin-top: 12px;
+  margin-top: 15px;
   cursor: pointer;
 }

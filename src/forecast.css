@@ -10,16 +10,19 @@
   transform: translate3d(0px, 0px, 0px);
   transition: -webkit-transform 0ms ease-in-out 0s;
 }
-h4 {
-  text-align: left;
-  margin-left: 12px;
-  margin-bottom: 15px;
-  line-height: 1;
-  opacity: 0.8;
-}
+
 .WeatherForecastPreview {
   line-height: 30px;
 }
 .temp-min-max {
   line-height: 1.1;
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+.hours {
+  text-align: left;
+  margin-left: 12px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  line-height: 1;
 }
